@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    background-color: #548687;
+    /* text center mai */
+    text-align: center;
+
+}
+
+.container{
+    /* only view la 70% container ke pass hogaa height : */
+    height: 70vh;
+    /* isse pura container center mai ayaa */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.game{
+    /* IMP WE CAN USE PX INSTEAD VMIN NO ISSUEE */
+    /* hmari dimension ka 60% diyaa */
+    height: 60vmin ;
+    width: 60vmin;
+    /* box upper necche same line ke liye flex */
+    display: flex;
+    /* agr jagh nhi hai tho necche aao  */
+    flex-wrap: wrap;
+    /* game waale box ke center mai aa gayee */
+    justify-content: center;
+    align-items: center;
+    /* gap btwn box */
+    gap: 1.5vmin;
+
+}
+
+.box{
+    /* /height 60px tho divide tho 20 % for each 3box in one line   */
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0,0,0,0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    /* disable per bg color light ho raha thaa */
+    background-color: #ffffc7;
+}
+
+#resetbtn
+{
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+
+#newbtn
+{
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg{
+    color: #ffffc7;
+    font-size: 5vmin;
+}
+
+.msgcontainer
+{
+    height: 100vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+
+/* <!-- hide is also class ye jab use jb shuruaat mai winner dekhna hi nhi hai  --> */
+/* now this class is used to show winner therfore in js file we have add classlisrt in resetbutton function  */
+.hide{
+    display: none;
+}
+
+#resetbutton
+{
+    padding: 1rem;
+    font-size: 1.1rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
